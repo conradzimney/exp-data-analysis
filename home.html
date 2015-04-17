@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Assignment 2</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<main>
+			<header>
+				<h3>Conrad Zimney </h3>
+				<h3>4/17/15</h3>	
+				<h3>Interactive Information Visualization</h3>
+				<h3>Assignment #2: Exploratory Data Analysis</h3>
+			</header>
+			<a href="" id="">
+				<img src="" alt="">
+			</a>
+			<section>
+			<p>I.   Beginning the Search: </p>
+	<p>Upon starting this exploratory data analysis, I came up with a couple of different domains that I thought would be interesting to explore. In general, if I thought that if I was going to explore any sort of political or governmental data that it would be confined to the Unite States, however, if I was going to explore any sort of space or climate related data that I would want it to be global. I didn’t want to initially restrict myself to one specific domain either, so I decided to search in as many different locations as possible until I found a dataset that sparked my interest and provoked questions. I began my search in the ‘Online Datasets’ provided on the Canvas site, initially with the Public Data Repositories. Lots of these sites contained CSV datasets, as well as excel files, both of which could be processed by Tableau. From here I began to find some datasets that got me thinking about questions pertaining to the associated data.
+</p>	
+			<p>II.   Initial Data Set: </p>
+	<p>Browsing through the Statistical Science Data Sets, I found a couple of experiments with datasets that I thought may be very interesting to explore. I discovered a dataset containing data about a person’s eye color and the person’s critical flicker frequency, the highest frequency at which the flicker in a flickering light source can be detected. This sort of experiment sparked my interest, and allowed me to formulate one of my first questions regarding the data set:</p>
+
+<p>Q1: Is there a relationship between someone’s eye color and their critical flicker frequency?</p>
+
+	<p>Upon further investigation, I realized that this was a very small dataset, and didn’t allow for a lot of manipulation. Because of this, I did not find that this dataset was large enough to answer my question. Specifically, I did not think that it would be statistically significant to the degree of being capable of changing a viewer’s opinion about this subject. I also thought that users would not be inclined to feel that I adequately answered my initial question because the average critical flicker frequencies for each color eye do not differ by a significant amount. Nonetheless, I created [Visualization No. 0], simple albeit, in order to support my previous assumptions about the data. I initial chose to use a bar chart to represent the data, however I thought that this allowed viewers to draw more significant of a conclusion that I thought the data actually provided. Instead, I decided to represent the average flicker frequency of different colored eyes as packed bubbles. Since we (humans) are not as talented at comparing the areas of circles, I thought that this visualization would best represent the answer I developed to my first question; no, there does not appear to be a significant relationship between someone’s eye color and their critical flicker frequency. </p>
+	<p>
+		<a href="flicker.html" id="image">
+				<img src="Flicker-Image.jpg" alt="Flicker image">
+			</a>
+	</p>
+			<p>III.   Further Exploration: </p> 
+	<p>After I discovered that my initial dataset would not be sufficient in answering my first question, I identified the reasons as to why this was the case. First, I did not find the first dataset to be large enough to draw any statistically significant conclusions from. Moving forward in my exploratory process, I decided that a new criteria would be that the dataset must be large enough such that an average viewer would be impressed by the magnitude of the data. This is so that an average viewer would actually feel as though I answered my question about the data. Second, I thought that the first dataset failed to answer my question because of the lack of difference in measurements, and that the conclusions drawn from these differences would not be plausible. This determined another criterion for future datasets so as not to encounter this problem again. That criterion being that from a glance at the raw data, there appears to be enough variance that some sort of valid conclusion could be drawn from these differences. </p>
+			<p>IV.   Second Data Set</p>
+	<p>After browsing the same library of datasets for a dataset that satisfied my previous criteria, I stumbled upon a dataset that I thought fit my prerequisites, and seemed very intriguing to me. The dataset was of mammals and data related to their sleeping habits, such as time spent sleeping per day, time spent dreaming while sleeping, lifespan, and brain and body weight. The data set contains all this data and more, for over 60 different species of mammals, which I believed to be enough data to draw significant conclusions from. It also appears as though there is enough variation in this dataset for valid inferences and answers to questions to be made from the data. My first question from this data set is as follows: </p>
+
+<p>Q2: Do humans dream more than other mammals? If so, how much more? </p>
+			<p>V.   Visualization Exploration: </p>
+	<p>By visualizing the data in different ways, I learned a lot about the data. First of all, I thought it would be important to document some problems that I ran into when uploading the raw text file into Tableau. I didn’t realize that because some of the values of integer or decimal data were input into the text file as “NA,” Tableau interpreted these fields as being String data types. This lead me on a wild goose chase, attempting to synthesize data types represented as Strings that were actually supposed to be numeric. After clarifying the proper data types for the values of the fields, I could actually come up with a visualization that I thought got me closer to answering my initial question of do humans dream more than other mammals? The answer is no, there are many mammals that dream for longer than humans do on average. I created a visualization which illuminates the answer to this question very well in [Visualization No. 1]. </p>
+	<p>
+		<a href="mammal-sleep.html" id="image">
+				<img src="Mammal-Dream-Image1.jpg" alt="mammal sleep image">
+			</a>
+	</p>
+			<p>VI.   Visualization No. 1: </p>
+	<p>My visualization process began with thinking about how best to show where humans lie on the mammal dream time spectrum. There are about 60 different species in my dataset, with dream time lengths varying from 0.3 to 6.6 hours. Although other sources may claim otherwise, this dataset recorded “man” (humans) to dream fro 1.9 hours per day. This is lower than the median of the data, which easily proves that yes, there are other mammals who dream more than humans. A pie chart did not work particularly well for showing the different species dream times since a lot of dream-time values are close together and angles are not easy to compare to each other. A bar chart did a lot better job of this, because length is much easier to compare to other lengths. I found that the best way to visualize the species information would be to include a hue (color) saturation for different mammal species (nominal data that is well-represented by color) based on their dream-time per day. Species whom had the highest dream-time are represented by a darker blue, while the lowest dream-time by a lighter blue. This color gradient makes it easy to see where a species lies on the spectrum, specifically that humans are directly in the center. In order to better show this specific data value, I added a marker to this value so that a viewer can easily pick out where humans lie on the dream-time spectrum. </p>
+			<p>VII.   Visualization No. 2: </p>
+	<p>Upon discovering the answer to my initial question, I found that there might be a better question to ask related to the first question. Since some mammals sleep for a longer period of time in total than humans, it only makes sense that they would dream for longer as well. The relativity of the percentage of time spent dreaming throughout the entire total sleep would be a more interesting data value to compare. The new question I came up with was:</p>
+
+<p>Q3: Is the percentage of total sleep spent dreaming in humans larger than that for other species of mammals?</p> 
+
+	<p>To answer this question, I used essentially the same visualization template that I used to answer the previous question. This is because I was dealing with very similar data and data types. I created a calculated field called Percentage of Dream-Time during Sleep which took the Dreaming measure, divided it by Total Sleep measure, and multiplied that by 100. This provided me with a simple percentage that would be easily comparable. The results of this visualization were slightly more interesting than before. This visualization made me realize that the percentage of time spent dreaming during total sleep is greater than most species in this dataset. Although there are still many other species whose dream-time percentage is greater, I felt as though this step in the data exploration process was an important one. </p>
+	<p>
+		<a href="percentage.html" id="image">
+				<img src="Mammal-Percentage-Image.jpg" alt="percentage image">
+			</a>
+	</p>	
+			<p>VIII.   Visualization No. 3: </p>
+	<p>At this point, I felt as though I had successfully explored the data, but wanted to dive one step further in analyzing this dataset. I looked back at the other measures taken in this experiment, and thought that brain and body weight would be interesting values to compare and incorporate against the dream-time percentage measure. I created a final calculated field called Brain to Body Weight Percentage that took the Brain Weight (grams), divided it by Body Weight (kilograms), multiplied by 1000 to convert to grams, and finally multiplied by 100 to convert to a percentage. This provided me with a Brain-to-Body Weight ratio that could then be compared to other values. I was especially interested in how this value would compare to the percentage of time spent during sleep, which led me to my final question: </p>
+
+<p>Q4: Is there a difference in the relationship between brain-to-body weight percentage, and percentage of sleep spent dreaming in humans, compared to that of different species of mammals? </p>
+<p>
+	<a href="final-viz.html" id="image">
+				<img src="Brain-Sleep-Plot.jpg" alt="final visualization">
+			</a>
+</p>
+
+	<p>This final visualization included 3 variables; species, brain-to-body weight percentage, and dream-to-sleep percentage. To show this, I started with a similar approach as I had been using before; a bar chart. This time, I created a stacked bar chart to incorporate the extra variable. Because of this, the bars were not neatly sortable because of the different values for each species. I decided that visually, this approach did not convey an answer to my question, and should therefore move on to another method. By utilizing a scatterplot, I could graph the dream-to-sleep percentage on one axis, and the brain-to-body weight percentage on the other, with each point on the plot representing a different species of mammal. Since the other distinct names of the species are not as important in this situation, it was ok just to label the human point and leave the others blank purely for comparison. I still included a color representation for different species in order to differentiate this nominal variable, with the color’s hue according to the brain-to-body weight percentage. The position of a mark on the plot informs viewers of the different species, as well as illustrates the relationship between their brain-to-body weight percentage, and dream-to-sleep percentage. This visualization illuminates the fact that humans have a higher brain to body weight percentage than most mammals, and still rank in the larger half of dream-time percentages. This illumination provides an answer to my question; yes, there is a slight difference in the relationship between brain-to-body weight percentage, and percentage of sleep spent dreaming in humans, compared to that of different species of mammals. Although this scatterplot does not suggest that there is a statistically significant correlation between this variables, it still shows that the residual value for humans is greater than that of other species included in this dataset. I decided to include the trend line for this scatterplot as well in order to show that humans are above the trend line for this data, therefore answering my final question about the dataset. </p>
+			<p>Works Cited:</p>
+<p>The effect of iris color on critical flicker frequency. Journal of General Psychology (1973), 		91-95.
+	Devore and Peck, Page 566.</p>
+<p>Allison, T., and Cicchetti, D. V. (1976). Sleep in mammals: ecological and constitutional 			correlates. Science 194 (November 12), 732-734.
+	The electronic data file was obtained from the Statlib database.</p>
+			<p></p>
+
+
+			</section>	
+
+
+
+
+		</main>	
+	</body>
+</html>

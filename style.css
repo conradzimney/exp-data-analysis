@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:400,300);
+
+body {
+    font-family: 'Oxygen', 'Helvetica Neue', 'Helvetica', sans-serif;
+    font-weight: 300;
+    background-color: #F0F8FF;
+}
+header	{
+	padding:1em;
+	color: #000;
+	border-bottom: 5px;
+	border-bottom-color: #EA4A00;
+}
+
+#image {
+	padding: 1em;
+	padding-left: 1em;
+}
+
+main a:link, a:visited {
+	color: #0000AA;
+	text-decoration: underline;
+}
+
+main a:hover, a:focus {
+	color: #0000EE;
+	text-decoration: underline;
+}
+
+section {
+	padding: 1em;
+}
